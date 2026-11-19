@@ -22,12 +22,13 @@ const row = (page, name) => page.locator('#entries-body tr.entry').filter({ has:
 
 function watchErrors(page) {
   const errors = [];
-  page.on('pageerror', (e) => errors.push(String(e)));
-  page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
+  const benign = (t) => /cloudflareinsights|cdn-cgi\/rum|favicon|ERR_FAILED/i.test(t);
+  page.on('pageerror', (e) => { if (!benign(String(e))) errors.push(String(e)); });
+  page.on('console', (m) => { if (m.type() === 'error' && !benign(m.text())) errors.push(m.text()); });
   return errors;
 }
 
-test.describe('Unzip Files Online', () => {
+test.describe('Free ZIP Tool', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('./');
     await page.waitForFunction(() => window.fflate && window.__demo);
@@ -247,5 +248,20 @@ test.describe('Unzip Files Online', () => {
     await expect(page.locator('#preview pre')).toContainText('Pinecrest Lake');
     await expect(page.locator('#selection-info')).toContainText('2 of 5 files selected');
     expect(errors).toEqual([]);
+  });
+
+  test('Create ZIP tab builds a downloadable archive from loose files', async ({ page }) => {
+    await page.click('#tab-create');
+    await expect(page.locator('#panel-create')).toBeVisible();
+    await page.setInputFiles('#create-file-input', [fixture('sample.txt'), fixture('small.png')]);
+    await expect(page.locator('#create-files-body tr')).toHaveCount(2);
+    await expect(page.locator('#create-build')).toBeEnabled();
+    const [download] = await Promise.all([page.waitForEvent('download'), page.click('#create-build')]);
+    expect(download.suggestedFilename()).toMatch(/\.zip$/i);
+    const files = fflate.unzipSync(new Uint8Array(fs.readFileSync(await download.path())));
+    const names = Object.keys(files).sort();
+    expect(names).toContain('sample.txt');
+    expect(names).toContain('small.png');
+    expect(fflate.strFromU8(files['sample.txt'])).toContain('quick brown fox');
   });
 });

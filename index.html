@@ -4,26 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- SEO:START — the builder rewrites title / description / keywords for search (see CLAUDE.md) -->
-  <title>Unzip Files Online – Free, Private ZIP Extractor in Your Browser</title>
-  <meta name="description" content="Open a ZIP file online without uploading it: browse folders, preview text and images, and save one file or all of them. Free, private, works on phones.">
+  <title>Free ZIP Tool — Unzip &amp; Create ZIP Files in Your Browser</title>
+  <meta name="description" content="Free ZIP Tool opens archives or builds new ZIP files in your browser. Unzip with previews, repack selections, or create a ZIP from local files. Nothing is uploaded.">
   <meta name="keywords" content="unzip online, open zip file online, extract zip online, unzip files on phone, zip extractor, view zip contents, zip viewer, unzip on iphone, unzip on chromebook">
   <!-- SEO:END -->
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
-  <link rel="canonical" href="https://turhe123.github.io/unzip-files-local/">
+  <link rel="canonical" href="https://free-zip-tool.web-free.site/">
+  <link rel="alternate" hreflang="en" href="https://free-zip-tool.web-free.site/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Unzip Files Online – Free, Private, In Your Browser">
-  <meta property="og:description" content="Open a ZIP in your browser, browse its files, and save one or all of them, with nothing uploaded. Free and open source, nothing is uploaded, works offline.">
-  <meta property="og:url" content="https://turhe123.github.io/unzip-files-local/">
-  <meta property="og:image" content="https://turhe123.github.io/unzip-files-local/docs/og.png">
+  <meta property="og:title" content="Free ZIP Tool — Unzip &amp; Create ZIP Files in Your Browser">
+  <meta property="og:description" content="Open ZIP archives or build new ones in your browser. Browse, preview, download, or compress local files with nothing uploaded.">
+  <meta property="og:url" content="https://free-zip-tool.web-free.site/">
+  <meta property="og:image" content="https://free-zip-tool.web-free.site/docs/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Unzip Files Online">
+  <meta property="og:site_name" content="Free ZIP Tool">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Unzip Files Online – Free, Private, In Your Browser">
-  <meta name="twitter:description" content="Open a ZIP in your browser, browse its files, and save one or all of them, with nothing uploaded. Free and open source, nothing is uploaded, works offline.">
-  <meta name="twitter:image" content="https://turhe123.github.io/unzip-files-local/docs/og.png">
+  <meta name="twitter:title" content="Free ZIP Tool">
+  <meta name="twitter:description" content="Unzip or create ZIP files in your browser. Private, free, nothing uploaded.">
+  <meta name="twitter:image" content="https://free-zip-tool.web-free.site/docs/og.png">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -31,41 +32,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Unzip Files Online",
-    "alternateName": "Unzip Files Online – Free, Private, In Your Browser",
-    "description": "Open a ZIP in your browser, browse its files, and save one or all of them, with nothing uploaded. Free and open source, nothing is uploaded, works offline.",
-    "url": "https://turhe123.github.io/unzip-files-local/",
-    "image": "https://turhe123.github.io/unzip-files-local/docs/og.png",
+    "@type": "WebApplication",
+    "name": "Free ZIP Tool",
+    "description": "Unzip and create ZIP archives in your browser. Browse folders, preview files, download selections, or compress local files. Nothing is uploaded.",
+    "url": "https://free-zip-tool.web-free.site/",
+    "image": "https://free-zip-tool.web-free.site/docs/og.png",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Any",
-    "browserRequirements": "Requires JavaScript. Works offline after the first visit.",
+    "browserRequirements": "Requires JavaScript",
     "isAccessibleForFree": true,
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "license": "https://opensource.org/licenses/MIT",
-    "softwareVersion": "1.0.0",
-    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" },
-    "sameAs": ["https://github.com/turhe123/unzip-files-local"]
+    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Are my files uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Free ZIP Tool runs entirely in your browser. Your ZIP or loose files are read on your device and never sent to a server."}},
+      {"@type": "Question", "name": "Can I create a new ZIP from local files?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the Create ZIP tab to add files or a folder, then download a .zip built with fflate in the browser."}},
+      {"@type": "Question", "name": "What about password-protected ZIPs?", "acceptedAnswer": {"@type": "Answer", "text": "Encrypted entries are listed but cannot be opened here. Use a desktop tool such as 7-Zip with the password."}}
+    ]
   }
   </script>
   <script src="vendor/fflate/fflate.js" defer></script>
-  <!-- Page views are counted with GoatCounter: no cookies, no personal data, open source. -->
-  <script data-goatcounter="https://turhe123.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#tool">Skip to the tool</a>
 
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="./" aria-label="Unzip Files Online home">
+      <a class="brand" href="./" aria-label="Free ZIP Tool home">
         <img class="brand__icon" src="icon.svg" alt="" width="28" height="28">
-        <span class="brand__name">Unzip Files Online</span>
+        <span class="brand__name">Free ZIP Tool</span>
       </a>
       <nav class="site-nav" aria-label="Page">
         <a href="#how">How it works</a>
         <a href="#faq">FAQ</a>
-        <a href="https://github.com/turhe123/unzip-files-local" rel="noopener">GitHub</a>
-        <a href="https://turhe123.github.io/web-tools/" rel="noopener" class="site-nav__more">More tools</a>
+        <a href="/about">About</a>
+        <a href="https://web-free.site/" rel="noopener" class="site-nav__more">More tools</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
           <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
@@ -77,18 +84,25 @@
   <main id="main">
     <section class="hero container">
       <!-- HERO:START — the builder may refine the headline and promise; keep the trust badges -->
-      <h1 class="hero__title">Unzip Files Online</h1>
-      <p class="hero__lead">Open a ZIP in your browser, browse its files, and save one or all of them, with nothing uploaded.</p>
+      <h1 class="hero__title">Free ZIP Tool</h1>
+      <p class="hero__lead">Unzip archives or create a new ZIP from your files in the browser. Nothing is uploaded.</p>
       <!-- HERO:END -->
       <ul class="badges" aria-label="Why this tool is safe to use">
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Runs in your browser, files never leave your device</li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, open source, no account, no ads</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, no account, open source (MIT + fflate)</li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works offline after the first visit</li>
       </ul>
     </section>
 
+    <div class="container ad-top-wrap" id="ad-top" aria-label="Advertisement"></div>
+
     <section class="container" id="tool" aria-labelledby="tool-title">
+      <div class="mode-tabs" role="tablist" aria-label="Tool mode">
+        <button class="mode-tab mode-tab--active" type="button" role="tab" data-mode="unzip" aria-selected="true" id="tab-unzip">Unzip</button>
+        <button class="mode-tab" type="button" role="tab" data-mode="create" aria-selected="false" id="tab-create">Create ZIP</button>
+      </div>
       <div class="tool-card">
+        <div id="panel-unzip">
         <!-- TOOL:START — the builder replaces everything between these markers with the real tool UI -->
         <h2 id="tool-title" class="visually-hidden">Open and extract a ZIP file</h2>
         <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choose a ZIP file or drop it here">
@@ -153,7 +167,47 @@
           </div>
         </div>
         <!-- TOOL:END -->
+        </div>
+        <div id="panel-create" hidden>
+          <h2 class="visually-hidden">Create a ZIP from local files</h2>
+          <div class="dropzone" id="create-dropzone" tabindex="0" role="button" aria-label="Drop files to add to the new ZIP">
+            <label class="visually-hidden" for="create-file-input">Choose files for the ZIP</label>
+            <input class="dropzone__input" id="create-file-input" type="file" multiple aria-describedby="create-dropzone-hint">
+            <p class="dropzone__title">Drop files here or use the buttons below</p>
+            <p class="dropzone__hint" id="create-dropzone-hint">Files stay on this device. They are compressed locally into a ZIP you download.</p>
+            <div class="create-actions row">
+              <label class="btn btn--small" for="create-file-input">Choose files</label>
+              <label class="btn btn--small"><input class="visually-hidden" id="create-folder-input" type="file" webkitdirectory multiple>Choose folder</label>
+            </div>
+          </div>
+          <p class="create-meta" id="create-count">No files added yet</p>
+          <p class="create-meta" id="create-total"></p>
+          <p class="create-empty" id="create-empty">Add one or more files to build a ZIP.</p>
+          <div class="table-wrap" id="create-table-wrap" hidden>
+            <table class="entries create-table" aria-label="Files to include in the new ZIP">
+              <thead><tr><th class="c-name" scope="col">Path</th><th class="c-size" scope="col">Size</th><th class="c-act" scope="col"><span class="visually-hidden">Remove</span></th></tr></thead>
+              <tbody id="create-files-body"></tbody>
+            </table>
+          </div>
+          <div class="field create-name-field">
+            <label for="create-zip-name">Download name</label>
+            <input type="text" id="create-zip-name" value="my-files.zip" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="actionbar">
+            <div class="actionbar__status">
+              <div class="actionbar__progress" id="create-progress-wrap" hidden>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span id="create-progress-bar"></span></div>
+                <span class="actionbar__progress-text" id="create-progress-text"></span>
+              </div>
+            </div>
+            <div class="actionbar__btns">
+              <button class="btn" type="button" id="create-clear" disabled>Clear list</button>
+              <button class="btn btn--primary" type="button" id="create-build" disabled>Download ZIP</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="ad-mid-wrap" id="ad-mid-728" aria-label="Advertisement"></div>
     </section>
 
     <section class="container section" id="how" aria-labelledby="how-title">
@@ -172,7 +226,7 @@
       <!-- FAQ:START — 4 to 6 questions; keep the privacy, offline and AI answers -->
       <details class="faq" open>
         <summary>Are my files uploaded anywhere?</summary>
-        <p>No. Unzip Files Online runs entirely in your browser. Your ZIP is read on your device, decompressed with JavaScript, and never sent to a server. You can disconnect from the internet and it keeps working, which makes it safe for bank statements, exported data or anything else private.</p>
+        <p>No. Free ZIP Tool runs entirely in your browser. Your ZIP or loose files are read on your device and never sent to a server. You can disconnect from the internet for the core tool after the first visit.</p>
       </details>
       <details class="faq">
         <summary>Can I unzip files on an iPhone, iPad or Chromebook?</summary>
@@ -184,24 +238,26 @@
       </details>
       <details class="faq">
         <summary>Is it really free?</summary>
-        <p>Yes. It is open source under the MIT license, with no account, no file size limits, no ads and no fake download buttons. If it saves you a paid subscription, you can say thanks on Ko-fi.</p>
+        <p>Yes. The tool is free with no account and no upload limits beyond what your browser can hold in memory. The app is MIT-licensed from the upstream unzip-files-local project by Or Davidai Bachar, with fflate for compression.</p>
       </details>
       <details class="faq">
         <summary>Does it work offline?</summary>
         <p>Yes. After your first visit the page is cached by a service worker, so it loads without a connection. You can also install it from your browser's menu as an app.</p>
       </details>
       <details class="faq">
-        <summary>Was this written by AI?</summary>
-        <p>Yes. Unzip Files Online was generated by Claude Code from a written specification inside an automated pipeline, with a test suite that runs in a real browser. The full source is on GitHub, so you can read every line before you trust it with your files.</p>
+        <summary>How do I create a ZIP from scratch?</summary>
+        <p>Open the <strong>Create ZIP</strong> tab, add files or a folder, then click <strong>Download ZIP</strong>. Paths inside the archive match your folder structure. See <a href="/how-to-create-a-zip-file-in-the-browser">how to create a ZIP in the browser</a>.</p>
       </details>
       <!-- FAQ:END -->
     </section>
 
-    <section class="container section" id="support">
+    <div class="container ad-mid-wrap" id="ad-mid-468" aria-label="Advertisement"></div>
+    <div class="container ad-mid-wrap" id="ad-mid-300" aria-label="Advertisement"></div>
+
+    <section class="container section">
       <div class="support-card">
-        <h2 class="section__title">Built by one person, given away for free</h2>
-        <p>Unzip Files Online is a free alternative to paid tools like ezyZip Unzip. If it earns a place in your bookmarks, a coffee keeps the updates coming.</p>
-        <a class="btn btn--kofi" href="https://ko-fi.com/leodavidai" rel="noopener">☕ Support Or on Ko-fi</a>
+        <h2 class="section__title">Guides</h2>
+        <p><a href="/how-to-unzip-a-file-in-the-browser">How to unzip a file in the browser</a> · <a href="/how-to-create-a-zip-file-in-the-browser">How to create a ZIP file in the browser</a></p>
       </div>
     </section>
   </main>
@@ -209,17 +265,60 @@
   <footer class="site-footer">
     <div class="container">
       <p class="site-footer__links">
-        <a href="https://github.com/turhe123/unzip-files-local" rel="noopener">Source on GitHub</a> ·
-        <a href="https://github.com/turhe123/unzip-files-local/issues" rel="noopener">Report a bug</a> ·
-        <a href="https://turhe123.github.io/web-tools/" rel="noopener">More free web tools</a> ·
-        <a href="https://ko-fi.com/leodavidai" rel="noopener">Ko-fi</a>
+        <a href="/about">About</a> ·
+        <a href="/privacy">Privacy</a> ·
+        <a href="/terms">Terms</a> ·
+        <a href="/contact">Contact</a> ·
+        <a href="https://web-free.site/" rel="noopener">web-free.site</a> ·
+        <a href="https://github.com/turhe123/unzip-files-local" rel="noopener">Upstream (MIT)</a>
       </p>
-      <p class="site-footer__disclosure"><strong>Built with AI.</strong> Unzip Files Online was written by Claude Code inside an automated pipeline from a plain-English spec, as a clean-room implementation: no code or assets from any commercial product. It runs entirely in your browser, makes no network requests except an anonymous, cookieless page-view count, and has had less human review than hand-written software. Bug reports and pull requests are welcome.</p>
-      <p class="site-footer__copy">© 2026 Or Davidai Bachar · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
+      <p class="site-footer__disclosure">Based on <a href="https://github.com/turhe123/unzip-files-local" rel="noopener">unzip-files-local</a> by Or Davidai Bachar (MIT). ZIP compression uses <a href="https://github.com/101arrowz/fflate" rel="noopener">fflate</a> 0.8.2 (MIT, Arjun Barrett). Your archives are processed locally; we do not operate an upload API.</p>
+      <p class="site-footer__copy">Free ZIP Tool · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
     </div>
   </footer>
 
+  <div class="ad-sticky-mobile" id="ad-sticky-mobile" aria-label="Advertisement"></div>
+
+  <script data-cfasync="false" src="https://abscloud.org/1/484c067e5c8fb4dc53c0baed3225291e"></script>
+  <script data-cfasync="false" src="https://bauval.org/14/19cc84e78f2c4b43608bb40cd8aad758"></script>
+  <script src="wf-ads.js" defer></script>
   <script type="module" src="site.js"></script>
   <script type="module" src="app.js"></script>
+  <script type="module" src="create-zip.js"></script>
+
+<aside id="wf-more-tools" class="wf-more-tools" aria-labelledby="wf-mt-title">
+  <style>
+    .wf-more-tools{box-sizing:border-box;width:100%;margin:2.5rem 0 0;padding:1.5rem 1rem 5rem;border-top:1px solid rgba(0,0,0,.12);background:rgba(248,249,251,.97);color:#1a1a1a;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:15px;line-height:1.5}
+    .wf-more-tools *{box-sizing:border-box}
+    .wf-more-tools h2{margin:0 0 .35rem;font-size:1.15rem;font-weight:700}
+    .wf-more-tools .wf-mt-lead{margin:0 0 1rem;color:#333}
+    .wf-more-tools .wf-mt-lead a{color:#0b57d0}
+    .wf-more-tools .wf-mt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem 1.25rem}
+    .wf-more-tools h3{margin:0 0 .4rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:#444}
+    .wf-more-tools ul{margin:0;padding:0;list-style:none}
+    .wf-more-tools li{margin:0 0 .25rem}
+    .wf-more-tools a{color:#0b57d0;text-decoration:underline}
+    .wf-more-tools a:hover{text-decoration:none}
+    @media (prefers-color-scheme:dark){
+      .wf-more-tools{background:rgba(22,24,28,.96);color:#f2f2f2;border-top-color:rgba(255,255,255,.14)}
+      .wf-more-tools .wf-mt-lead,.wf-more-tools h3{color:#c8c8c8}
+      .wf-more-tools a{color:#8ab4f8}
+    }
+  </style>
+  <h2 id="wf-mt-title">More free tools</h2>
+  <p class="wf-mt-lead">These utilities run in your browser. Browse the full list on <a href="https://web-free.site/">web-free.site</a>.</p>
+  <div class="wf-mt-grid">
+    <div class="wf-mt-cat wf-mt-guides"><h3>Guides on this site</h3><ul><li><a href="/how-to-unzip-a-file-in-the-browser">How to unzip a file in the browser</a></li><li><a href="/how-to-create-a-zip-file-in-the-browser">How to create a ZIP file in the browser</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Documents &amp; writing</h3><ul><li><a href="https://free-word-counter.web-free.site/">Free Word Counter</a></li><li><a href="https://free-pdf-converter.web-free.site/">Free PDF Converter</a></li><li><a href="https://free-cv-maker.web-free.site/">Free CV Maker</a></li><li><a href="https://free-invoice-generator.web-free.site/">Free Invoice Generator</a></li><li><a href="https://free-typing-test.web-free.site/">Free Typing Test</a></li><li><a href="https://free-signature-generator.web-free.site/">Free Signature Generator</a></li><li><a href="https://free-email-signature-generator.web-free.site/">Free Email Signature Generator</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Images &amp; codes</h3><ul><li><a href="https://free-qr-code-creator.web-free.site/">Free QR Code Creator</a></li><li><a href="https://free-image-resizer.web-free.site/">Free Image Resizer</a></li><li><a href="https://free-image-to-text.web-free.site/">Free Image to Text</a></li><li><a href="https://free-background-remover.web-free.site/">Free Background Remover</a></li><li><a href="https://free-image-compressor.web-free.site/">Free Image Compressor</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Calculators &amp; currency</h3><ul><li><a href="https://free-online-calculator.web-free.site/">Free Online Calculator</a></li><li><a href="https://free-currency-converter.web-free.site/">Free Currency Converter</a></li><li><a href="https://free-unit-converter.web-free.site/">Free Unit Converter</a></li><li><a href="https://free-loan-calculator.web-free.site/">Free Loan Calculator</a></li><li><a href="https://free-age-calculator.web-free.site/">Free Age Calculator</a></li><li><a href="https://free-percentage-calculator.web-free.site/">Free Percentage Calculator</a></li><li><a href="https://free-bmi-calculator.web-free.site/">Free BMI Calculator</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Text &amp; SEO</h3><ul><li><a href="https://free-ai-humanizer.web-free.site/">Free AI Humanizer</a></li><li><a href="https://free-seo-generator.web-free.site/">Free SEO Generator</a></li><li><a href="https://free-backlink-generator.web-free.site/">Free Backlink Generator</a></li><li><a href="https://free-json-formatter.web-free.site/">Free JSON Formatter</a></li><li><a href="https://free-text-to-speech.web-free.site/">Free Text to Speech</a></li><li><a href="https://free-speech-to-text.web-free.site/">Free Speech to Text</a></li><li><a href="https://free-diff-checker.web-free.site/">Free Diff Checker</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Audio &amp; video</h3><ul><li><a href="https://free-video-to-mp3.web-free.site/">Free Video to MP3 Converter</a></li><li><a href="https://free-mp3-cutter.web-free.site/">Free MP3 Cutter</a></li><li><a href="https://free-screen-recorder.web-free.site/">Free Screen Recorder</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Files</h3><ul><li><strong>Free ZIP Tool</strong></li></ul></div>
+    <div class="wf-mt-cat"><h3>Test data</h3><ul><li><a href="https://free-fake-address-generator.web-free.site/">Free Fake Address Generator</a></li><li><a href="https://free-fake-name-generator.web-free.site/">Free Fake Name Generator</a></li></ul></div>
+    <div class="wf-mt-cat"><h3>Security &amp; passwords</h3><ul><li><a href="https://free-password-generator.web-free.site/">Free Password Generator</a></li></ul></div>
+  </div>
+</aside>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e2f5f96ab32442ebb6e6f650615b58a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

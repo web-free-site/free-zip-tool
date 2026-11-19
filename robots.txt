@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /tests/
 
-Sitemap: https://turhe123.github.io/unzip-files-local/sitemap.xml
+Sitemap: https://free-zip-tool.web-free.site/sitemap.xml

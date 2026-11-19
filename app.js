@@ -1,4 +1,4 @@
-// app.js — Unzip Files Online. Everything runs on this device; the only fetch() is __demo loading a bundled fixture.
+// app.js — Free ZIP Tool (unzip mode). Everything runs on this device; the only fetch() is __demo loading a bundled fixture.
 // The archive is never read whole: the central directory is parsed from the end of the file, and each entry is
 // sliced and decompressed only when the user previews or saves it (large entries inflate in worker.js).
 import { toast, downloadBlob, formatBytes, wireDropzone } from './site.js';

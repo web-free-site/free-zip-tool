@@ -1,0 +1,11 @@
+AGENT_BRIEF.md
+.github/
+.git/
+tests/
+playwright.config.js
+CLAUDE.md
+SPEC.md
+scripts/test.sh
+scripts/build-static-pages.mjs
+partials/
+node_modules/

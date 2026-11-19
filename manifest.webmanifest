@@ -1,7 +1,7 @@
 {
-  "name": "Unzip Files Online",
-  "short_name": "Unzip Files",
-  "description": "Open a ZIP in your browser, browse its files, and save one or all of them, with nothing uploaded. Free and open source, nothing is uploaded, works offline.",
+  "name": "Free ZIP Tool",
+  "short_name": "ZIP Tool",
+  "description": "Unzip and create ZIP files in your browser. Nothing is uploaded.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
