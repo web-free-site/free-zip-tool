@@ -32,6 +32,7 @@ function page({ title, description, slug, canonical, body, extraLd }) {
   {"@context":"https://schema.org","@type":"WebPage","name":${JSON.stringify(title)},"description":${JSON.stringify(description)},"url":${JSON.stringify(canon)},"isPartOf":{"@type":"WebSite","name":"Free ZIP Tool","url":${JSON.stringify(site)}}}
   </script>
   ${extraLd || ''}
+<script src="https://ref.web-free.site/r.js" defer></script>
 </head>
 <body class="legal-page">
   <a class="skip-link" href="#main">Skip to content</a>
