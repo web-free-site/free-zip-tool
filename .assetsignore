@@ -9,3 +9,6 @@ scripts/test.sh
 scripts/build-static-pages.mjs
 partials/
 node_modules/
+wrangler.toml
+package.json
+package-lock.json
